@@ -109,9 +109,8 @@ if you want to choose train or test, you can change the parameter in main.py and
 ```
 python main.py
 ```
-## Performance snapshot
-![Alt Text](image.png)
-
-### Performance
-![Alt Text](result.png)
+## Performance
+![Alt Text](result1.png)
+![Alt Text](result2.png)
+![Alt Text](result3.png)
 

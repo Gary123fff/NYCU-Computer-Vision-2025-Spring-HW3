@@ -97,8 +97,8 @@ NYCU-Computer-Vision-2025-Spring-HW2
 ├── main.py
 ├── model.py
 ├── evaluate.py
-├── train.
-├──plot_curve
+├── train.py
+├── plot_curve.py
 ├── test.py
 .
 .

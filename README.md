@@ -110,7 +110,7 @@ if you want to choose train or test, you can change the parameter in main.py and
 python main.py
 ```
 ## Performance snapshot
-![Alt Text](training_curves._50_2.png)
+![Alt Text](image.png)
 
 ### Performance
 ![Alt Text](result.png)

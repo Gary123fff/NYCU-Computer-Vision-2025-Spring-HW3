@@ -120,7 +120,7 @@ def swin_model_fpn(num_classes, device):
         max_size=384
     )
 
-    model.roi_heads.positive_fraction = 0.25
+    model.roi_heads.positive_fraction = 0.3
     model.rpn.head = RPNHead(in_channels=384, num_anchors=num_anchors)
 
     in_features = model.roi_heads.box_predictor.cls_score.in_features

@@ -72,11 +72,8 @@ def visualize_random_samples(dataset, index=0):
 def train_transform():
     """Return the training augmentation pipeline."""
     return A.Compose([
-        A.Resize(height=400, width=400),
-        A.OneOf([
-            A.RandomRotate90(p=0.5),
-            A.Affine(scale=(0.9, 1.1), translate_percent=0.05, p=0.5)
-        ], p=0.7),
+        A.Resize(height=384, width=384),
+        A.RandomRotate90(p=0.5),
         A.HorizontalFlip(p=0.5),
         A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, p=0.3),
         A.Normalize(mean=(0.485, 0.456, 0.406),
@@ -88,7 +85,7 @@ def train_transform():
 def val_transform():
     """Return the validation augmentation pipeline."""
     return A.Compose([
-        A.Resize(400, 400),
+        A.Resize(384, 384),
         A.Normalize(mean=(0.485, 0.456, 0.406),
                     std=(0.229, 0.224, 0.225)),
         ToTensorV2()

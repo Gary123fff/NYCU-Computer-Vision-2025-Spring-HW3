@@ -75,8 +75,8 @@ We trained our model with the following strategy to optimize performance on a sm
 ## How to install
 1. Clone the repository
 ```
-git clone https://github.com/Gary123fff/NYCU-Computer-Vision-2025-Spring-HW2.git
-cd NYCU-Computer-Vision-2025-Spring-HW1
+git clone https://github.com/Gary123fff/NYCU-Computer-Vision-2025-Spring-HW3.git
+cd NYCU-Computer-Vision-2025-Spring-HW3
 ```
 2. Create a virtual environment
 ```
@@ -85,22 +85,21 @@ conda activate cv
 ```
 
 3. Download the dataset 
-- Download the dataset from the [LINK](https://drive.google.com/file/d/13JXJ_hIdcloC63sS-vF3wFQLsUP1sMz5/view)
+- Download the dataset from the [LINK]([https://drive.google.com/file/d/13JXJ_hIdcloC63sS-vF3wFQLsUP1sMz5/view](https://drive.google.com/file/d/1B0qWNzQZQmfQP7x7o4FDdgb9GvPDoFzI/view))
 - Put it in the following structure
 ```
 NYCU-Computer-Vision-2025-Spring-HW2
 ├── datasets
+│   ├── test_release
 │   ├── train
-│   ├── valid
-├   ├── test
-├   ├── train.json
-│   └── valid.json
-├── dataset.py
+├   ├── test_image_name_to_ids.json
+├── data.py
 ├── main.py
 ├── model.py
-├── pred.py
-├── train.py
-├── valid.py
+├── evaluate.py
+├── train.
+├──plot_curve
+├── test.py
 .
 .
 .

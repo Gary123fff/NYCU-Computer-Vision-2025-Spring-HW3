@@ -64,7 +64,7 @@ We trained our model with the following strategy to optimize performance on a sm
 | Batch Size            | 4                         |
 | Epochs                | 50                        |
 | LR Scheduler          | CosineAnnealingLR         |
-| Positive ROI sampling fraction | 0.25             |
+| Positive ROI sampling fraction | 0.3              |
 ### Data Split:
 - The dataset was split 80/20 into training and validation sets using `random_split`.
 

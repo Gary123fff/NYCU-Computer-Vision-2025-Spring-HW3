@@ -12,11 +12,11 @@ I chose to use a Mask R-CNN architecture and made several customizations to impr
 
 ## Dataset Overview
 
-We used a dataset consisting of 209 RGB medical images for training and validation, and an additional 101 images for testing. Each image contains multiple instances of four different cell types (class1, class2, class3, class4). The task is to detect and segment each cell instance accurately.
+I used a dataset consisting of 209 RGB medical images for training and validation, and an additional 101 images for testing. Each image contains multiple instances of four different cell types (class1, class2, class3, class4). The task is to detect and segment each cell instance accurately.
 
 ## Data Preprocessing
 
-To prepare the data, we built a custom preprocessing pipeline:
+To prepare the data, I built a custom preprocessing pipeline:
 
 ### Image Loading:
 - TIFF images were loaded using OpenCV and converted from BGR to RGB.
@@ -35,10 +35,10 @@ To prepare the data, we built a custom preprocessing pipeline:
 
 ## Model Architecture
 
-We implemented a custom Mask R-CNN in PyTorch specifically tailored for this medical segmentation task.
+I implemented a custom Mask R-CNN in PyTorch specifically tailored for this medical segmentation task.
 
 ### Backbone:
-- We used a Swin Transformer as the backbone due to its strength in capturing both local and global features, crucial for identifying diverse cell structures. An FPN (Feature Pyramid Network) was added to allow detection at multiple scales.
+- I used a Swin Transformer as the backbone due to its strength in capturing both local and global features, crucial for identifying diverse cell structures. An FPN (Feature Pyramid Network) was added to allow detection at multiple scales.
 
 ### Custom Heads:
 - **Box Head**: Replaced the default box head with a custom `CustomBoxPredictor` composed of two fully connected layers followed by classification and regression layers.
@@ -49,7 +49,7 @@ We implemented a custom Mask R-CNN in PyTorch specifically tailored for this med
 
 ## Training Strategy
 
-We trained our model with the following strategy to optimize performance on a small medical dataset:
+I trained my model with the following strategy to optimize performance on a small medical dataset:
 
 
 ### Learning Rate Schedule:

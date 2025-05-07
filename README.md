@@ -8,7 +8,7 @@ I chose to use a Mask R-CNN architecture and made several customizations to impr
 
 
 ---
-## Method#
+## Method
 
 ## Dataset Overview
 
@@ -51,19 +51,20 @@ We implemented a custom Mask R-CNN in PyTorch specifically tailored for this med
 
 We trained our model with the following strategy to optimize performance on a small medical dataset:
 
-### Optimizer:
-- **AdamW** optimizer was chosen to combine adaptive learning with effective regularization via weight decay.
 
 ### Learning Rate Schedule:
 - A cosine annealing schedule was used to gradually decay the learning rate for better convergence.
 
 ### Hyperparameters:
-- Learning rate: `5e-4`
-- Batch size: `4`
-- Epochs: `50`
-- Weight decay: `5e-3`
-- Positive ROI sampling fraction: `0.25`
-
+| Hyperparameter        | Value                     |
+|-----------------------|---------------------------|
+| Optimizer             | AdamW                     |
+| Learning Rate         | 5e-4                      |
+| Weight Decay          | 5e-3                      |
+| Batch Size            | 4                         |
+| Epochs                | 50                        |
+| LR Scheduler          | CosineAnnealingLR         |
+| Positive ROI sampling fraction | 0.25             |
 ### Data Split:
 - The dataset was split 80/20 into training and validation sets using `random_split`.
 

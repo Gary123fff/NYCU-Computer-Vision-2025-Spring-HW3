@@ -110,7 +110,7 @@ if you want to choose train or test, you can change the parameter in main.py and
 python main.py
 ```
 ## Performance
-![Alt Text](result1.png)
-![Alt Text](result2.png)
-![Alt Text](result3.png)
+![Alt Text](./result/result1.png)
+![Alt Text](./result/result2.png)
+![Alt Text](./result/result3.png)
 

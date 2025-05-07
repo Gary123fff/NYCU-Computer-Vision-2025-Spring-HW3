@@ -29,9 +29,9 @@ To prepare the data, I built a custom preprocessing pipeline:
 
 ### Data Augmentation:
 - **Image Normalization**: Images were normalized using ImageNet mean and standard deviation.
-- **Size Standardization**: All images were resized to 400×400 to maintain consistent input size.
+- **Size Standardization**: All images were resized to 384×384 to maintain consistent input size.
 - **Color Augmentation**: Color jitter was applied to vary brightness, contrast, and saturation.
-- **Geometric Transformations**: Mild affine transformations (scaling and translation) were used to preserve spatial structure while increasing data variability.
+- **Geometric Transformations**:transformations (scaling and translation) were used to preserve spatial structure while increasing data variability.
 
 ## Model Architecture
 
